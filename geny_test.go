@@ -20,8 +20,8 @@ import (
 func TestGeny(t *testing.T) {
 	ctx := Context(context.Background(), "a.b/c", "c")
 	f := File(
-		FunctionDecl(Ident("Foo")).Params(
-			Param(Ident("f"), QualifiedIdent("a.b/c", "Foo")),
+		FunctionDecl(
+			Ident("main"),
 		).Result(
 			Error(),
 		).Body(

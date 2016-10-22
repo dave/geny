@@ -5,22 +5,28 @@ import (
 	"io"
 )
 
-type qualifiedIdent struct {
+type ident struct {
 	pkg  string
 	name string
 }
 
-func QualifiedIdent(pkg string, name string) *qualifiedIdent {
-	return &qualifiedIdent{
+func Ident(name string) *ident {
+	return &ident{
+		name: name,
+	}
+}
+
+func QualifiedIdent(pkg string, name string) *ident {
+	return &ident{
 		pkg:  pkg,
 		name: name,
 	}
 }
 
-func (i *qualifiedIdent) Build(ctx context.Context, w io.Writer) error {
+func (i *ident) Build(ctx context.Context, w io.Writer) error {
 	gc := FromContext(ctx)
 
-	if gc.Package == i.pkg {
+	if gc.Package == i.pkg || i.pkg == "" {
 		w.Write([]byte(i.name))
 		return nil
 	}
