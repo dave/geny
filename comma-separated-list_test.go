@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/davelondon/ktest/assert"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCommaSeparatedList_Build(t *testing.T) {

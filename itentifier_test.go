@@ -3,7 +3,7 @@ package geny_test
 import (
 	"testing"
 
-	. "kego.io/process/geny"
+	. "github.com/davelondon/geny"
 )
 
 func TestIdent(t *testing.T) {

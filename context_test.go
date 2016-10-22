@@ -10,9 +10,9 @@ import (
 	"go/format"
 	"strings"
 
-	"github.com/davelondon/ktest/require"
+	. "github.com/davelondon/geny"
 	"github.com/stretchr/testify/assert"
-	. "kego.io/process/geny"
+	"github.com/stretchr/testify/require"
 )
 
 func TestContext(t *testing.T) {
