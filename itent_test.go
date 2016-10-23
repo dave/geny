@@ -130,3 +130,22 @@ var _ g.h
 var _ g1.k`
 	compare(t, "a.b/c", "c", code, expected)
 }
+
+/*
+func TestCall(t *testing.T) {
+	var code Code
+	var expected string
+
+	code = File(
+		VarDecl(Ident("b")).Type(Ident("c")).Equals(
+			Ident("d").Call(Ident("e")),
+		),
+	)
+	expected = `
+package a
+
+var b c = d(e)`
+	compare(t, "a", "a", code, expected)
+
+}
+*/
