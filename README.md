@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/davelondon/geny.svg?branch=master)](https://travis-ci.org/davelondon/geny?branch=master)
-[![codecov.io](https://codecov.io/github/davelondon/geny/coverage.svg?branch=master)](https://codecov.io/github/davelondon/geny/branch/master)
+[![Build Status](https://travis-ci.org/dave/geny.svg?branch=master)](https://travis-ci.org/dave/geny?branch=master)
+[![codecov.io](https://codecov.io/github/dave/geny/coverage.svg?branch=master)](https://codecov.io/github/dave/geny/branch/master)
 
 Geny
 ====

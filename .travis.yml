@@ -6,9 +6,9 @@ notificaitons:
     recipients: dave@brophy.uk
     on_failure: always
 install:
-  - go get -u github.com/davelondon/kerr/kcov
+  - go get -u github.com/dave/kerr/kcov
   - go get -t -v ./...
 script:
-  - kcov -r github.com/davelondon/geny
+  - kcov -r github.com/dave/geny
 after_success:
   - bash <(curl -s https://codecov.io/bash)

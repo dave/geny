@@ -3,7 +3,7 @@ package geny_test
 import (
 	"testing"
 
-	. "github.com/davelondon/geny"
+	. "github.com/dave/geny"
 )
 
 func TestFunctionDecl(t *testing.T) {

@@ -12,7 +12,7 @@ import (
 
 	"strings"
 
-	. "github.com/davelondon/geny"
+	. "github.com/dave/geny"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
